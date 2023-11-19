@@ -1,0 +1,320 @@
+/* Nav bar  */
+nav {
+	backdrop-filter: saturate(180%) blur(5px);
+	font-family: 'Rubik', 'Poppins','Sen','Roboto Condensed','Jost','Inter', sans-serif;
+	font-weight: 600;
+  }
+  .nav-item a:hover {
+	color: #93DA2D;
+  }
+	  .link-arrow:after {
+		content: '';
+		background-size: 100% 100%;
+		width: auto;
+		height: 12px;
+		position: absolute;
+		top: 5px;
+		right: -28px;
+		transition: all .4s cubic-bezier(.35, 1, .33, 1);
+		-o-transition: all .4s cubic-bezier(.35, 1, .33, 1);
+		-moz-transition: all .4s cubic-bezier(.35, 1, .33, 1);
+		-webkit-transition: all .4s cubic-bezier(.35, 1, .33, 1);
+	  }
+  
+	  .link-arrow:hover:after {
+		right: -35px
+	  }
+  
+	  .link-arrow.link-arrow-white:after {
+		background-size: 100% 100%
+	  }
+  
+	  .link-arrow-hover:after {
+		right: -35px
+	  }
+  
+	  .link {
+		display: inline-block;
+		position: relative;
+		border: none;
+		padding-bottom: 4px;
+		font-weight: 700
+	  }
+  
+	  .link:active,
+	  .link:focus,
+	  .link:hover {
+		outline: 0
+	  }
+  
+	  .link:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		background: #000;
+		width: 0;
+		height: 2px;
+		transition: all .4s cubic-bezier(.35, 1, .33, 1);
+		-o-transition: all .4s cubic-bezier(.35, 1, .33, 1);
+		-moz-transition: all .4s cubic-bezier(.35, 1, .33, 1);
+		-webkit-transition: all .4s cubic-bezier(.35, 1, .33, 1);
+	  }
+  
+	  .link:hover {
+		color: #000
+	  }
+  
+	  .link:hover:before {
+		width: 100%
+	  }
+  
+	  .link-theme:before {
+		background: #7bff00
+	  }
+	
+	/* Form  */
+body > div {
+	font-family: 'Poppins', sans-serif;
+	color: #58a014;
+}
+
+.section-contact {
+    padding: 70px;
+}
+
+.section-contact .header-section .title {
+	position: relative;
+	margin-bottom: 17px;
+	text-transform: uppercase;
+    font-weight: 700;
+    font-size: 55px;
+}
+
+.section-contact .header-section .title .dot {
+    display: inline-block;
+	position: absolute;
+    bottom: 8px;
+    width: 8px;
+    height: 8px;
+    margin-left: 3px;
+    background-color: #df383f;
+}
+
+.section-contact .header-section .description {
+	font-family: "Roboto", sans-serif;
+	color: #008b0c;
+}
+
+.section-contact .header-section .big-title {
+	position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%,70%);
+	-o-transform:  translate(-50%,70%);
+	-ms-transform:  translate(-50%,70%);
+	-moz-transform:  translate(-50%,70%);
+	-webkit-transform:  translate(-50%,70%);
+    font-size: 120px;
+    font-weight: 700;
+    opacity: 0.15;
+}
+
+.section-contact .form-contact .single-input {
+	position: relative;
+    margin-top: 40px;
+}
+
+.section-contact .form-contact .single-input i {
+	position: absolute;
+    top: 5px;
+    left: 15px;
+    color: #91de38;
+}
+
+.section-contact .form-contact .single-input input,
+.section-contact .form-contact .single-input textarea {
+	width: 100%;
+    border: none;
+    border-bottom: 2px solid #b5c200;
+    padding-left: 50px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.section-contact .form-contact .single-input input::placeholder,
+.section-contact .form-contact .single-input textarea::placeholder {
+	color: rgba(38, 92, 7, 0.3);
+}
+textarea {
+    outline: none;
+}
+
+input:focus {
+    outline: 0;
+    font-family: 'barlow', sans-serif;
+}
+
+.section-contact .form-contact .single-input textarea {
+	height: 150px;
+	min-height: 50px;
+}
+
+.section-contact .form-contact .submit-input input {
+	margin-top: 40px;
+    padding: 15px 50px;
+    background-color: white;
+    color: #1b8500;
+	border: 2px solid #1b8500;
+    font-weight: 700;
+	-o-transition: all .3s;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+    transition: all .3s;
+}
+
+.section-contact .form-contact .submit-input input:hover {
+	background-color: #1b8500;
+	color: white;
+	padding: 15px 40px;
+	animation: hue linear;
+}
+.section-contact .form-contact .submit-input input:active {
+	box-shadow: 0px 0px 8px black inset;
+}
+
+/* Submin Button  */
+
+@media (max-width: 575.99px) {
+	.section-contact {
+	    padding: 80px 60px;
+	}
+
+	.section-contact .header-section .title {
+	    font-size: 40px;
+	}
+
+	.section-contact .header-section .big-title {
+		font-size: 80px;
+	}
+
+	.section-contact .header-section .description {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767.99px) {
+	.section-contact {
+	    padding: 80px 60px;
+	}
+
+	.section-contact .header-section .title {
+	    font-size: 45px;
+	}
+
+	.section-contact .header-section .big-title {
+		font-size: 100px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+	.section-contact {
+	    padding: 80px 60px;
+	}
+
+	.section-contact .header-section .title {
+	    font-size: 45px;
+	}
+
+	.section-contact .header-section .big-title {
+		font-size: 100px;
+	}
+}
+
+
+  /* Footer  */
+
+  footer {
+	font-family: 'Inter',sans-serif;
+	font-weight: 600;
+  }
+  p {
+	transition: all .3s;
+	-o-transition: all .3s;
+	  -moz-transition: all .3s;
+	-webkit-transition: all .3s;
+  }
+  p:hover , p:hover>.fas{
+	color: rgb(0, 0, 0);
+  }
+  .fab {
+	font-size: 24px;
+  }
+  .fw-bold {
+	margin-left: 15px;
+  }
+  
+	.f-bg {
+	  background-color: #78b615;
+	}
+	.f-bg > div > .me-4 > i:hover {
+	  transition: all 0.2s;
+	}
+	.fa-facebook-f:hover {
+	  color: rgb(42, 94, 173);
+	}
+	.fa-twitter:hover {
+	  color: #3f73ad;
+	}
+	.fa-google:hover {
+	  color: white;
+	}
+	.fa-instagram:hover {
+	  color: #ad400e;
+	}
+	.fa-linkedin:hover {
+	  color: #3f73ad;
+	  padding: 0px 0.1em;
+	  background-color: white;
+	}
+	.fa-github:hover {
+	  background-color: rgb(0, 0, 0);
+	  border-radius: 50%;
+	}
+	   /* Footer Icon Hover Anim  */
+	   p .sign{
+		visibility: hidden;
+	}
+	  p:hover .sign{
+		visibility: visible;
+		animation-name: sign;
+		-o-animation-name: sign;
+		-moz-animation-name: sign;
+		-webkit-animation-name: sign;
+		animation-duration: 0.7s;
+		-o-animation-duration: 0.7s;
+		-moz-animation-duration: 0.7s;
+		-webkit-animation-duration: 0.7s;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;
+	}
+	@keyframes sign{
+		0%{
+			position: relative;
+			left: 0px;
+		}
+		50%{
+			position: relative;
+			left: -10px;
+		}
+		100%{
+			position: relative;
+			left: 0px;
+		}
+	}
+  
+	.fas {
+	  color: #5c5c5c;
+	}

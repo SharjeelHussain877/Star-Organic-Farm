@@ -1,0 +1,427 @@
+
+      /* Nav Start  */
+      nav {
+        backdrop-filter: saturate(180%) blur(5px);
+        font-family: "Rubik", "Poppins", "Sen", "Roboto Condensed", "Jost",
+          "Inter", sans-serif;
+        font-weight: 600;
+      }
+
+      .nav-item a:hover {
+        color: #93da2d;
+      }
+
+      .link-arrow:after {
+        content: "";
+        background-size: 100% 100%;
+        width: auto;
+        height: 12px;
+        position: absolute;
+        top: 5px;
+        right: -28px;
+        -webkit-transition: all 0.4s cubic-bezier(0.35, 1, 0.33, 1);
+        transition: all 0.4s cubic-bezier(0.35, 1, 0.33, 1);
+      }
+
+      .link-arrow:hover:after {
+        right: -35px;
+      }
+
+      .link-arrow.link-arrow-white:after {
+        background-size: 100% 100%;
+      }
+
+      .link-arrow-hover:after {
+        right: -35px;
+      }
+
+      .link {
+        display: inline-block;
+        position: relative;
+        border: none;
+        padding-bottom: 4px;
+        font-weight: 700;
+      }
+
+      .link:active,
+      .link:focus,
+      .link:hover {
+        outline: 0;
+      }
+
+      .link:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: #000;
+        width: 0;
+        height: 2px;
+        -webkit-transition: all 0.4s cubic-bezier(0.35, 1, 0.33, 1);
+        transition: all 0.4s cubic-bezier(0.35, 1, 0.33, 1);
+      }
+
+      .link:hover {
+        color: #000;
+      }
+
+      .link:hover:before {
+        width: 100%;
+      }
+
+      .link-theme:before {
+        background: #7bff00;
+      }
+
+      /* Nav End  */
+      /* aboutus */
+      .heading {
+        padding: 5px 0px;
+        border-radius: 10px;
+        background-color: #ddfcb2;
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 58px;
+        font-weight: 400;
+      }
+      .para {
+        margin: 5px 0px;
+        color: #ddfcb2;
+        font-weight: 400;
+        line-height: 32px;
+        font-size: 22px;
+      }
+      .about > div > h2 {
+        color: #93da2d;
+        font-family: "Sen", sans-serif;
+        font-weight: 800;
+      }
+      .about > div > h4 {
+        color: #9de934;
+        font-family: "Barlow", sans-serif;
+        font-weight: 800;
+        padding: 20px 5px;
+        letter-spacing: 2px;
+        word-spacing: 0.7rem;
+      }
+      .about > div > p {
+        font-family: "Sen", sans-serif;
+        text-align: justify;
+        letter-spacing: 1px;
+        line-height: 1.5rem;
+      }
+      .about > div > p > span {
+        font-weight: bold;
+      }
+      .about > div > p > .italic {
+        font-style: italic;
+      }
+      @media only screen and (max-width: 400px) {
+        .about > div > p {
+          font-size: 16px;
+        }
+      }
+      /* aboutus end */
+      /* card */
+
+      .process-row {
+        font-family: "Barlow", sans-serif;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+      }
+      .traineeship .activity {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 267px;
+        margin: 15px 10px 10px;
+        background-color: #242835;
+        -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        overflow: hidden;
+      }
+      .animate-from-bottom__0 {
+        -webkit-animation-name: from-left;
+        animation-name: from-left;
+        -webkit-animation-duration: 0.5s;
+        animation-duration: 0.5s;
+      }
+      .animate-from-bottom__1 {
+        -webkit-animation-name: from-left;
+        animation-name: from-left;
+        -webkit-animation-duration: 0.8s;
+        animation-duration: 0.8s;
+      }
+      .animate-from-bottom__2 {
+        -webkit-animation-name: from-left;
+        animation-name: from-left;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+      }
+      .animate-from-bottom__3 {
+        -webkit-animation-name: from-left;
+        animation-name: from-left;
+        -webkit-animation-duration: 1.2s;
+        animation-duration: 1.2s;
+      }
+      .animate-from-bottom__4 {
+        -webkit-animation-name: from-left;
+        animation-name: from-left;
+        -webkit-animation-duration: 1.2s;
+        animation-duration: 1.2s;
+      }
+      .traineeship .activity .relative-block {
+        width: 100%;
+        min-height: 350px;
+      }
+      @-webkit-keyframes from-left {
+        from {
+          -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+        }
+
+        to {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+        }
+      }
+      @keyframes from-left {
+        from {
+          -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+        }
+
+        to {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+        }
+      }
+      .relative-block {
+        position: relative;
+      }
+      .activity-icon {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      .activity-icon img {
+        width: 70%;
+        float: right;
+      }
+      .traineeship .inactive {
+        padding: 20px;
+      }
+      .traineeship .inactive .title {
+        border-bottom: 3px solid #78b615;
+        padding-bottom: 14px;
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 28px;
+      }
+      .num {
+        color: #eeeeee;
+      }
+      .traineeship .activity .active {
+        display: none;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        height: auto;
+        min-height: 100%;
+        padding: 25px 30px 50px;
+      }
+      .traineeship .activity .active .title {
+        color: #78b615;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 32px;
+      }
+      .traineeship .activity .active .sub-title {
+        margin-top: 10px;
+        color: #616161;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: left;
+      }
+      .traineeship .activity .active .ul {
+        margin-bottom: 45px;
+        margin-top: 10px;
+      }
+      .traineeship .activity .active .li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-left: 30px;
+        color: #616161;
+        font-size: 16px;
+        line-height: 26px;
+      }
+      .traineeship .activity .active .li:before {
+        position: absolute;
+        content: "\f00c";
+        color: #e2b921;
+        font-family: FontAwesome;
+        display: inline-block;
+        margin-left: -1.6em;
+        width: 22px;
+      }
+      .traineeship .activity:hover {
+        width: 558px;
+        background-color: #fff;
+      }
+      .traineeship .activity:hover .inactive {
+        display: none;
+      }
+      .traineeship .activity:hover .active {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 340px;
+      }
+      @media only screen and (max-width: 1000px) {
+        .process-row {
+          flex-direction: column;
+        }
+
+        .traineeship .inactive .title {
+          font-size: 1.5rem;
+        }
+
+        .traineeship .activity {
+          width: 93%;
+        }
+        .traineeship .activity .active {
+          width: 93%;
+        }
+
+        .traineeship .activity .active .sub-title {
+          font-size: 1em;
+        }
+
+        .traineeship .activity .active .title {
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+
+        .traineeship .activity .relative-block {
+          min-height: 100%;
+        }
+
+        .traineeship .activity:hover {
+          width: 98%;
+          margin-left: 2px;
+          margin-right: 10px;
+        }
+      }
+
+      @media only screen and (max-width: 400px) {
+        .activity-icon img {
+          width: 30%;
+        }
+        .traineeship .activity .active .sub-title {
+          font-size: 0.7em;
+        }
+      }
+      /* card end */
+      /* Vision */
+      .vision > h1 {
+        margin-bottom: 40px;
+        color: #93da2d;
+        text-align: center;
+        font-family: "Rubik", sans-serif;
+        margin-top: 120px;
+      }
+      .vision > h2 {
+        line-height: 29px;
+        text-align: center;
+        font-family: "Rubik", sans-serif;
+        font-size: 22px;
+      }
+      /* Vision Mission end*/
+      /* Footer Start  */
+
+      .f-bg {
+        background-color: #78b615;
+      }
+
+      .f-bg > div > .me-4 > i:hover {
+        transition: all 0.2s;
+      }
+
+      .fa-facebook-f:hover {
+        color: white;
+      }
+      .fa-twitter:hover {
+        color: #3f73ad;
+      }
+
+      .fa-google:hover {
+        color: white;
+      }
+
+      .fa-instagram:hover {
+        color: #ad400e;
+      }
+
+      .fa-linkedin:hover {
+        color: #3f73ad;
+        padding: 0px 0.1em;
+        background-color: white;
+      }
+
+      .fa-github:hover {
+        background-color: white;
+        border-radius: 50%;
+      }
+
+      /* Footer Icon Hover Anim  */
+      p .sign {
+        visibility: hidden;
+      }
+
+      p:hover .sign {
+        visibility: visible;
+        animation-name: sign;
+        animation-duration: 0.7s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes sign {
+        0% {
+          position: relative;
+          left: 0px;
+        }
+
+        50% {
+          position: relative;
+          left: -10px;
+        }
+
+        100% {
+          position: relative;
+          left: 0px;
+        }
+      }
+
+      /* Footer End  */

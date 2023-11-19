@@ -1,0 +1,298 @@
+/* Nav bar  */
+nav {
+  backdrop-filter: saturate(180%) blur(5px);
+  font-family: "Rubik", "Poppins", "Sen", "Roboto Condensed", "Jost", "Inter",
+    sans-serif;
+  font-weight: 600;
+}
+.nav-item a:hover {
+  color: #7bff00;
+}
+.link-arrow:after {
+  content: "";
+  background-size: 100% 100%;
+  width: auto;
+  height: 12px;
+  position: absolute;
+  top: 5px;
+  right: -28px;
+  transition: all 0.4s cubic-bezier(0.35, 1, 0.33, 1);
+  -o-transition: all 0.4s cubic-bezier(0.35, 1, 0.33, 1);
+  -moz-transition: all 0.4s cubic-bezier(0.35, 1, 0.33, 1);
+  -webkit-transition: all 0.4s cubic-bezier(0.35, 1, 0.33, 1);
+}
+.now-active {
+  color: #7bff00;
+}
+
+.link-arrow:hover:after {
+  right: -35px;
+}
+
+.link-arrow.link-arrow-white:after {
+  background-size: 100% 100%;
+}
+
+.link-arrow-hover:after {
+  right: -35px;
+}
+
+.link {
+  display: inline-block;
+  position: relative;
+  border: none;
+  padding-bottom: 4px;
+  font-weight: 700;
+}
+
+.link:active,
+.link:focus,
+.link:hover {
+  outline: 0;
+}
+
+.link:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #000;
+  width: 0;
+  height: 2px;
+  transition: all 0.4s cubic-bezier(0.35, 1, 0.33, 1);
+  -o-transition: all 0.4s cubic-bezier(0.35, 1, 0.33, 1);
+  -moz-transition: all 0.4s cubic-bezier(0.35, 1, 0.33, 1);
+  -webkit-transition: all 0.4s cubic-bezier(0.35, 1, 0.33, 1);
+}
+
+.link:hover {
+  color: #000;
+}
+
+.link:hover:before {
+  width: 100%;
+}
+
+.link-theme:before {
+  background: #7bff00;
+}
+
+/* 3 Image  */
+
+#container #gif {
+  margin-left: 7%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+}
+#container #gif div {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+#container div img {
+  border-radius: 1rem;
+  cursor: pointer;
+  max-width: 100%;
+  transition: all 0.4s;
+  transform: scale(1);
+}
+#container div img:hover {
+  border-radius: 1rem;
+  transform: scale(1.1);
+}
+
+/* Text  */
+.container > .main > .my-5 {
+  font-family: "Inter", "Rubik", "Poppins", "Sen", "Roboto Condensed", "Jost",
+    sans-serif;
+  font-weight: 600;
+  animation: slide-down 0.5s;
+}
+
+/* Product Cards  */
+.card {
+  transition: 0.4s all ease-in;
+  border: none;
+}
+
+.carousel-control-next-icon {
+  padding: 0 4px 0 0;
+}
+.product_price {
+  float: right;
+  font-family: lato;
+  color: #6b7270;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.product-detail {
+  position: absolute;
+  height: 75px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  overflow: hidden;
+  padding: 15px;
+  background-color: rgba(223, 217, 217, 0.75);
+  transition: all 0.35s;
+  text-align: center;
+  box-sizing: border-box;
+}
+.card .product-detail h5 {
+  font-family: "Oswald";
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 3px 0;
+}
+
+.card .product-detail .subheading {
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.card .product-detail blockquote {
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+  font-size: 1em;
+}
+.card:hover .product-detail {
+  height: calc(92%);
+  padding-top: 100px;
+}
+
+@media screen and (max-width: 770px) and (min-width: 300px) {
+  .p-card {
+    margin: 0px auto;
+    width: 22rem;
+  }
+}
+
+/* Suggestions  */
+.suggestions a {
+  text-decoration: none;
+}
+.suggestions .card {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+.suggestions .p-card {
+  border-radius: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  transition: all .3s;
+  translate: -10px;
+}
+.suggestions .p-card:hover {
+  transform: scale(1.1);
+  border-radius: 10px;
+  box-shadow: -5px -4px 8px black;
+  translate: 30px;
+}
+
+.suggestions h3 {
+  position: absolute;
+  bottom: 5px;
+  font-weight: bold;
+  text-shadow: 2px 3px 4px black;
+  color: white;
+  font-size: 28px;
+  padding: 20px;
+   font-family: 'Inter',sans-serif;
+}
+/* Footer  */
+
+footer {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+p {
+  transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+p:hover,
+p:hover > .fas {
+  color: rgb(0, 0, 0);
+}
+.fab {
+  font-size: 24px;
+}
+.fw-bold {
+  margin-left: 15px;
+}
+
+.f-bg {
+  background-color: #78b615;
+}
+.f-bg > div > .me-4 > i:hover {
+  transition: all 0.2s;
+}
+.fa-facebook-f:hover {
+  color: rgb(42, 94, 173);
+}
+.fa-twitter:hover {
+  color: #3f73ad;
+}
+.fa-google:hover {
+  color: white;
+}
+.fa-instagram:hover {
+  color: #ad400e;
+}
+.fa-linkedin:hover {
+  color: #3f73ad;
+  padding: 0px 0.1em;
+  background-color: white;
+}
+.fa-github:hover {
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+}
+/* Footer Icon Hover Anim  */
+p .sign {
+  visibility: hidden;
+}
+p:hover .sign {
+  visibility: visible;
+  animation-name: sign;
+  -o-animation-name: sign;
+  -moz-animation-name: sign;
+  -webkit-animation-name: sign;
+  animation-duration: 0.7s;
+  -o-animation-duration: 0.7s;
+  -moz-animation-duration: 0.7s;
+  -webkit-animation-duration: 0.7s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes sign {
+  0% {
+    position: relative;
+    left: 0px;
+  }
+  50% {
+    position: relative;
+    left: -10px;
+  }
+  100% {
+    position: relative;
+    left: 0px;
+  }
+}
+
+.fas {
+  color: #5c5c5c;
+}
